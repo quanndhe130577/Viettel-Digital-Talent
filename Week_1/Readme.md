@@ -25,17 +25,17 @@
 ```sh
  $ sudo systemctl status docker
 ```
-<img src="./imgs/statusDocker.png">
+<img src="./img/statusDocker.png">
  #### Run 'hello-world' image để test docker engine
 ```sh
  $ sudo docker run hello-world
 ``` 
  Nếu thành sẽ được kết quả như sau : 
 
-<img src="./imgs/testHelloWorld.png">
+<img src="./img/testHelloWorld.png">
 
  Trong trường hợp gặp phải lỗi 'permission denied', thì sử dụng các câu lệnh sau :
-<img src="./imgs/permissionDenied.png">
+<img src="./img/permissionDenied.png">
 ```sh
  $ sudo usermod -aG docker ${USER}
  $ su - ${USER}
@@ -63,7 +63,7 @@ $ docker run -d --name mariadb \
 $ docker container ls -a
 ```
  Chúng ta sẽ thấy 1 container 'mariadb' đã được tạo :
-<img src="./imgs/runMariaDB_CommanLine.png">
+<img src="./img/runMariaDB_CommanLine.png">
 ### Bước 3 : Tạo volumes cho Wordpress và khởi chạy
 ```sh
 $ docker volume create --name wordpress_data
@@ -79,11 +79,11 @@ $ docker run -d --name wordpress \
 ```
  Tương tự bước trên, sau khi chạy thành công, chúng ta có thể kiểm tra lại container và thấy rằng
 WordPress project đang được chạy ở port 8443:
-<img src="./imgs/containerCheck.png">
+<img src="./img/containerCheck.png">
 
  Sau đó, mở trình duyệt và truy cập địa chỉ "https://localhost:8443" để kiểm tra, chúng ta sẽ được
 kết quả như sau:
-<img src="./imgs/localhost8443.png">
+<img src="./img/localhost8443.png">
 
 ## Bài 2 : Deploy Wordpress với Docker Compose
  ### Bước 1 : Cài đặt Docker Compose 
@@ -97,9 +97,9 @@ $ docker-compose up -d
 ```
  Sau khi chạy thành công, chúng ta kiểm tra container, sẽ thấy có 2 container mới vừa được tạo:
  (trong ví dụ là 2 container với names : ren573_wordpress_1 / ren573_mariadb_1)
-<img src="./imgs/checkContainerCompose.png">
+<img src="./img/checkContainerCompose.png">
  Mở trình duyệt, truy cập địa chỉ "https://localhost:443", chúng ta sẽ được 1 trang web giống bài 1
-<img src="./imgs/localhost8443.png">
+<img src="./img/localhost8443.png">
 
 *Trong trường hợp để chắc chắn, chúng ta nên tắt container đã chạy ở bài 1 sau đó mới tiến hành truy cập địa chỉ*
 ```sh
@@ -130,7 +130,7 @@ $ docker run -d --name mariadb \
 $ docker container ls -a
 ```
  Chúng ta sẽ thấy 1 container 'mariadb' đã được tạo :
-<img src="./imgs/runMariaDB_CommanLine.png">
+<img src="./img/runMariaDB_CommanLine.png">
 ### deploy MariaDB trên VM1:
 ### Bước 1 : Tạo network:
 ```sh
@@ -151,7 +151,7 @@ $ docker run -d --name wordpress \
 ```
  Tương tự bước trên, sau khi chạy thành công, chúng ta có thể kiểm tra lại container và thấy rằng
 WordPress project đang được chạy ở port 8443:
-<img src="./imgs/containerCheck.png">
+<img src="./img/containerCheck.png">
  Sau đó, mở trình duyệt và truy cập địa chỉ "https://localhost:8443" để kiểm tra, chúng ta sẽ được
 kết quả như sau:
-<img src="./imgs/localhost8443.png">
+<img src="./img/localhost8443.png">
