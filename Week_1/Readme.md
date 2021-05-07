@@ -26,10 +26,11 @@
  $ sudo systemctl status docker
 ```
 <img src="./img/statusDocker.png">
+
  #### Run 'hello-world' image để test docker engine
 ```sh
  $ sudo docker run hello-world
-``` 
+```
  Nếu thành sẽ được kết quả như sau : 
 
 <img src="./img/testHelloWorld.png">
