@@ -1,8 +1,8 @@
 # Bài tập tuần 1
-##Bài 1 : Tạo Virtual Machine, cài đặt docker trên VM, deploy Wordpress với Command line
+## Bài 1 : Tạo Virtual Machine, cài đặt docker trên VM, deploy Wordpress với Command line
 ## Cài đặt docker trên VM
 ### Chạy các lệnh sau trên terminal để cài đặt docker
- ##### Cài đặt repository
+ ### Cài đặt repository
 ```sh
   $  sudo apt-get update
   $  sudo apt-get install \
@@ -16,7 +16,7 @@
   	"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
  	bionic stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
- #### Cài đặt Docker Engine
+ ### Cài đặt Docker Engine
 ```sh
  $ sudo apt-get update
  $ sudo apt-get install docker-ce docker-ce-cli containerd.io 
@@ -85,7 +85,7 @@ WordPress project đang được chạy ở port 8443:
 kết quả như sau:
 <img src="./imgs/localhost8443.png">
 
-##Bài 2 : Deploy Wordpress với Docker Compose
+## Bài 2 : Deploy Wordpress với Docker Compose
  ### Bước 1 : Cài đặt Docker Compose 
 ```sh
 $ sudo apt install docker-compose
@@ -106,7 +106,7 @@ $ docker-compose up -d
 $ docker container stop <your_containerID>
 ```
 
-##Bài 3 : Tạo 2 Virtual Machines, 1 cái deploy MariaDB, 1 cái deploy WordPress
+## Bài 3 : Tạo 2 Virtual Machines, 1 cái deploy MariaDB, 1 cái deploy WordPress
 Tương tự như bài 1, Sau khi cài đặt 2 VM và docker trên 2 VM, chúng ta sẽ làm tiếp như sau:
 ### deploy MariaDB trên VM1:
 ### Bước 1 : Tạo network:
