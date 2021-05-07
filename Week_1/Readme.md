@@ -1,4 +1,4 @@
-# Bài tập tuần 1 - Viettel cloud 
+# Bài tập tuần 1
 ##Bài 1 : Tạo Virtual Machine, cài đặt docker trên VM, deploy Wordpress với Command line
 ## Cài đặt docker trên VM
 ### Chạy các lệnh sau trên terminal để cài đặt docker
