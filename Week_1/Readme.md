@@ -97,7 +97,7 @@ $ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-wordpress/m
 $ docker-compose up -d
 ```
  Sau khi chạy thành công, chúng ta kiểm tra container, sẽ thấy có 2 container mới vừa được tạo:
- (trong ví dụ là 2 container với names : ren573_wordpress_1 / ren573_mariadb_1)
+ (trong ví dụ là 2 container với names : ren573_wordpress_1 / ren573_mariadb_1
 <img src="./img/checkContainerCompose.png">
  Mở trình duyệt, truy cập địa chỉ "https://localhost:443", chúng ta sẽ được 1 trang web giống bài 1
 <img src="./img/localhost8443.png">
