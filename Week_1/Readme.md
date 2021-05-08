@@ -118,6 +118,7 @@ $ docker network create wordpress-network
 ```sh
 $ docker volume create --name mariadb_data
 $ docker run -d --name mariadb \
+  -p 3306:3306
   --env ALLOW_EMPTY_PASSWORD=yes \
   --env MARIADB_USER=bn_wordpress \
   --env MARIADB_PASSWORD=bitnami \
