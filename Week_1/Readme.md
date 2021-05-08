@@ -115,6 +115,7 @@ Tương tự như bài 1, Sau khi cài đặt 2 VM và docker trên 2 VM, chúng
 $ docker network create wordpress-network
 ```
 ### Bước 2: Tạo volumes cho MariaDB và tạo MariaDB container
+#### Mở port 3306 để VM2 có thể kết nối đến
 ```sh
 $ docker volume create --name mariadb_data
 $ docker run -d --name mariadb \
@@ -139,6 +140,7 @@ $ docker container ls -a
 $ docker network create wordpress-network
 ```
 ### Bước 2 : Tạo volumes cho Wordpress và khởi chạy
+#### Khai báo địa chỉ mariadb để kết nối đến thông qua biến WORDPRESS_DATABASE_HOST
 ```sh
 $ docker volume create --name wordpress_data
 $ docker run -d --name wordpress \
