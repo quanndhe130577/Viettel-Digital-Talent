@@ -134,7 +134,7 @@ $ docker container ls -a
 ```
  Chúng ta sẽ thấy 1 container 'mariadb' đã được tạo :
 <img src="./img/runMariaDB_CommanLine.png">
-### deploy MariaDB trên VM1:
+### deploy Wordpress trên VM2:
 ### Bước 1 : Tạo network:
 ```sh
 $ docker network create wordpress-network
