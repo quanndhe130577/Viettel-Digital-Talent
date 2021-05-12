@@ -116,12 +116,12 @@ Bước 1: Tạo thư mục roles, trong đó tạo file 'install_docker-playboo
           state: started
        
       - name : add user to docker group
-	    command:
-	      cmd: sudo usermod -aG docker ${USER}
-	     
+	  command:
+	    cmd: sudo usermod -aG docker ${USER}
+
 	  - name : type the following command
-	    command: 
-	      cmd: su - ${USER}
+	  command: 
+	    cmd: su - ${USER}
 
 Bước 2 : Run playbook:
 
@@ -270,12 +270,12 @@ Bước 1: Tạo thư mục roles, trong đó tạo file 'install_docker-playboo
           state: started
           
       - name : add user to docker group
-		  command:
-		   cmd: sudo usermod -aG docker ${USER}
-		 
-	  - name : type the following command
-	 	  command: 
-		   cmd: su - ${USER}
+	  command:
+	    cmd: sudo usermod -aG docker ${USER}
+
+      - name : type the following command
+          command: 
+            cmd: su - ${USER}
 
 Bước 2 : Run playbook:
 
