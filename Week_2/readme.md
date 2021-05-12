@@ -194,10 +194,10 @@ Bước 3 : Kiểm tra trên máy host :
 
     docker container ls -a
 
-<img src="deployWPSuccess.png">
+<img src="./img/deployWPSuccess.png">
 
 Truy cập https://localhost:8443 trên máy host để kiểm tra wordpress đã chạy hay chưa :
 
-<img src="resultDeployWeb.png">
+<img src="./img/resultDeployWeb.png">
 
 
