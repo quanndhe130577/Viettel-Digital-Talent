@@ -31,7 +31,7 @@ Chạy lệnh sau trên terminal :
 
     $ ip add show
 
-<img src="getIPv4.png">
+<img src="./img/getIPv4.png">
 
 Kết quả trả về sẽ hiện thị IP của máy chủ đó ( ex : 192.168.1.6 )
 ### 4. Cài đặt *openssh-server* 
