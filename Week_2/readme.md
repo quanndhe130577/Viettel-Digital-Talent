@@ -70,7 +70,7 @@ Bài này, chúng ta thực hiện setup Ansible trên Controller VM, sau đó s
   
   *Tạo project folder 'ansible_practice1'. Sau đó:* 
 
-### 1. Khai báo file '*ansible.cfg':
+### 1. Khai báo file 'ansible.cfg':
 
     [defaults]
     host_key_checking = False
