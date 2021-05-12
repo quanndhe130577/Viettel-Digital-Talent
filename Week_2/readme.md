@@ -62,7 +62,7 @@ Bài này, chúng ta thực hiện setup Ansible trên Controller VM, sau đó s
 
     $ sudo apt install python3-pip
 
-### 4. Cài đặt Ansible
+### 4. Cài đặt *Ansible*
 
     $ sudo apt install ansible
 
