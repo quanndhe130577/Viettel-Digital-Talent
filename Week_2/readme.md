@@ -116,12 +116,12 @@ Bước 1: Tạo thư mục roles, trong đó tạo file 'install_docker-playboo
           state: started
        
       - name : add user to docker group
-	    command:
-	      cmd: sudo usermod -aG docker ${USER}
-	     
+	  command:
+	    cmd: sudo usermod -aG docker ${USER}
+
 	  - name : type the following command
-	    command: 
-	      cmd: su - ${USER}
+	  command: 
+	    cmd: su - ${USER}
 
 Bước 2 : Run playbook:
 
@@ -270,12 +270,12 @@ Bước 1: Tạo thư mục roles, trong đó tạo file 'install_docker-playboo
           state: started
           
       - name : add user to docker group
-		  command:
-		   cmd: sudo usermod -aG docker ${USER}
-		 
-	  - name : type the following command
-	 	  command: 
-		   cmd: su - ${USER}
+	  command:
+	    cmd: sudo usermod -aG docker ${USER}
+
+      - name : type the following command
+          command: 
+            cmd: su - ${USER}
 
 Bước 2 : Run playbook:
 
@@ -302,7 +302,7 @@ Kết quả trả về khi thành công:
 
 Phần này chúng ta sẽ deploy mariadb lên máy chủ Mariadb VM
 
-### 1: Viết file 'deploy_mariadb-playbook.yaml' :
+### 1. Viết file 'deploy_mariadb-playbook.yaml' :
 
     - name : deploy mariadb
       hosts: db
@@ -366,7 +366,7 @@ Phần này chúng ta sẽ deploy mariadb lên máy chủ Mariadb VM
 
 Phần này chúng ta sẽ deploy web lên máy chủ Wordpress VM
 
-### 1: Viết file 'deploy_web-playbook.yaml' :
+### 1. Viết file 'deploy_web-playbook.yaml' :
 
     - name : deploy web
       hosts: wp
