@@ -80,3 +80,5 @@ Sau đó chúng ta sẽ thấy được các gói tin được chuyền từ IP 
 Kết quả nhận được như sau:
 
 <img src="./img/resultWS.png">
+
+## Mô hình đã sử dụng : 
