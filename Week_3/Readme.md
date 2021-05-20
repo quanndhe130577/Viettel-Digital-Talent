@@ -62,7 +62,9 @@ Dùng câu lệnh sau để kiểm tra
 $ sudo ovs-vsctl show
 ```
 Ta sẽ có kết quả thành công như sau :
+
 <img src="./img/kiemTraBridge.png">
+
 ### Bước 6: Ping để chuyền dữ liệu từ Ubuntu1 đến Ubuntu2 
 ```
   $ ping -I br1 10.1.3.12
@@ -71,7 +73,10 @@ Ta sẽ có kết quả thành công như sau :
 Ta cùng có thể ping ngược lại từ Ubuntu2 đến Ubuntu 1 bằng cách thay địa chỉ IP br-vxl của máy chủ 1
 ### Bước 7: Dùng wireshark để bắt gói dữ liệu
 Mở phần mềm wireshark, và chọn bridge *"br-vxl*"
+
 <img src="./img/chonBridgeTrongWS.png">
+
 Sau đó chúng ta sẽ thấy được các gói tin được chuyền từ IP 10.1.3.10 đến 10.1.3.12 và ngược lại
 Kết quả nhận được như sau:
+
 <img src="./img/resultWS.png">
