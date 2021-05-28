@@ -95,7 +95,7 @@ sudo bash -c "echo -e $config >> /etc/ansible/ansible.cfg"
         
     enable_haproxy: "no"
 
-	kolla_internal_vip_address: "192.168.1.3"
+    kolla_internal_vip_address: "192.168.1.3"
 ```
 
 > Note: ip gắn cho `kolla_internal_vip_address` là ip của `enp0s3`
@@ -105,6 +105,7 @@ sudo bash -c "echo -e $config >> /etc/ansible/ansible.cfg"
 cd /home/host/testAIO
 kolla-ansible -i all-in-one bootstrap-servers
 ```
+
 <img src="img/result_install_bs.png">
 
 ### Bước 14:  Kiểm tra thiết lập Kolla Ansible
@@ -117,12 +118,14 @@ kolla-ansible -i all-in-one prechecks
 ```
 kolla-ansible -i all-in-one deploy
 ```
+
 <img src="img/result_deploy.png">
 
 ### Bước 16: Thiết lập File Environment Openstack
 ```
 kolla-ansible -i all-in-one post-deploy
 ```
+
 <img src="img/result_post_deploy.png">
 
 # Chào mừng bạn đến với OpenStack
