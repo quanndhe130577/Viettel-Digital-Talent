@@ -32,6 +32,7 @@ Kích hoạt môi trường ảo:
 
     source kolla_ansible_venv/bin/activate
  Sau khi kích hoạt, bạn sẽ được đưa vào môi trường ảo:
+ 
  <img src="img/vao_moi_truong_ao.png">
  
 >  Để vào được môi trường ảo những lần sau bạn chỉ cần chạy câu lệnh
@@ -45,6 +46,7 @@ pip install -U pip
 ```
 pip install 'ansible==2.9'
 ```
+
 <img src="img/install_success_ansible2.9.png">
 
 ### Bước 5: Cài đặt `Kolla-ansible`
