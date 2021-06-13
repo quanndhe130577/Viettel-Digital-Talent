@@ -33,7 +33,7 @@ Tại giao diện Dashboard, chọn `New item`, sau đó nhập tên item, chọ
 
  <img src="img/Cai dat gitlab plugin in Jenkins 4.png">
 
-Tại giao diện `Build Triggers` được mở ra, chúng ta có thể kéo xuống và ấn `Save` luôn
+Tại giao diện `Build Triggers` được mở ra, chúng ta chúng ta cấu hình như sau, sau đó ấn `Save`
 
  <img src="img/Cai dat gitlab plugin in Jenkins 5.png">
 
@@ -73,4 +73,39 @@ Nhấn `Add Webhook`, 1 project webhooks sẽ được tạo ra, chúng ta chọ
 
 Trên giao diện chính Dashboard của pipeline, chúng ta chọn `Build Now`. Sau khi chạy thành công sẽ hiển thị ra thêm một dòng ở `Build History`. Nhận chọn để xem logs quá trình build ở mục `Console Output`
 
+Jenkinsfile :
+
+    pipeline {
+        agent any
+        environment {
+            dotnet = 'path\\to\\dotnet.exe'
+        }
+        stages {
+        	stage('Restore Packages') {
+     	        steps {
+      	            bat "dotnet restore"
+     	        }
+        	}
+     	    stage('Clean') {
+         	    steps {
+          		    bat "dotnet clean"
+         	    }
+    	    }
+            stage('Build') {
+                steps {
+                    bat 'dotnet build'
+                }
+            }
+            stage('Test') {
+                steps {
+                    bat 'dotnet test'
+                }
+            }
+        }
+    }
+
 <img src="img/Cai dat gitlab plugin in Jenkins 9.png">
+
+Kết quả :
+
+<img src="img/Cai dat gitlab plugin in Jenkins 10.png">
